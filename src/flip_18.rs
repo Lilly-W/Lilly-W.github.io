@@ -31,8 +31,8 @@ const DEFAULT_GRAVITY: f32 = -9.81;
 const DEFAULT_DT: f32 = 1.0 / 60.0;
 
 const COLOR_DIFFUSION_COEFF: f32 = 0.001;
-const PARTICLE_COLOR: Vec3 = vec3(0.0, 0.0, 1.0);
-const OBSTALCE_COLOR: Vec3 = vec3(1.0, 0.0, 0.0);
+const PARTICLE_COLOR: Vec3 = vec3(0.914,0.953,0.804);
+const OBSTALCE_COLOR: Vec3 = vec3(0.106,0.443,0.392);
 const OBSTACLE_DISK_NUM_SEGS: usize = 100;
 const GRID_POINT_SIZE_SCALE: f32 = 0.9;
 const PARTICLE_POINT_SIZE_SCALE: f32 = 2.0;
