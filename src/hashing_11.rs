@@ -4,12 +4,12 @@ use rand::Rng;
 use wasm_bindgen::prelude::*;
 
 const TIME_STEP: f32 = 1.0 / 60.0;
-const RADIUS: f32 = 0.025;
+const RADIUS: f32 = 0.035;
 const MIN_DIST: f32 = 2.0 * RADIUS;
 const MIN_DIST_SQ: f32 = MIN_DIST * MIN_DIST;
 const SPACING: f32 = 3.0 * RADIUS;
 const INIT_VEL_RAND: f32 = 0.2;
-const BOUNDS: [Vec3; 2] = [vec3(-1.0, 0.0, -1.0), vec3(1.0, 2.0, 1.0)];
+const BOUNDS: [Vec3; 2] = [vec3(0.953,0.804,0.894), vec3(0.812,0.769,0.945)];
 
 static NUMX: Lazy<usize> =
     Lazy::new(|| f32::floor((BOUNDS[1].x - BOUNDS[0].x - 2.0 * SPACING) / SPACING) as usize);
